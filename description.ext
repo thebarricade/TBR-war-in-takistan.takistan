@@ -620,7 +620,7 @@ class Params
 		title = "KIND OF SERVER";
 		values[] = {1,2,3};
 		texts[] = {"TEAM - Admin chooses team members", "OPEN SERVER - All players are team members", "No team - All players are mercenaries"};
-		default = 2;
+		default = 3;
 	};
 
 	class wckindofgame

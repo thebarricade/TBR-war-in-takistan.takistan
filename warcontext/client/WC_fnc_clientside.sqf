@@ -63,6 +63,7 @@
 
 	// arcade == 1
 	if(wckindofgame == 1) then {
+		/*
 		wcgarbage = ["Hospital", getmarkerpos "hospital"] spawn BIS_fnc_3dcredits;
 		wcgarbage = ["Weapons", getmarkerpos "crate1"] spawn BIS_fnc_3dcredits;
 		if(wcautoloadweapons == 1) then {
@@ -76,9 +77,11 @@
 		wcgarbage = ["Jail", getmarkerpos "jail"] spawn BIS_fnc_3dcredits;
 		wcgarbage = ["Headquarters", getpos anim] spawn BIS_fnc_3dcredits;
 		wcgarbage = ["Ied training", getpos iedtraining] spawn BIS_fnc_3dcredits;
+		*/
 	};
 
 	// create a light in takistan base
+	/*
 	if!(isnull tower1) then {
 		_light = "#lightpoint" createVehiclelocal (position tower1); 
 		_light setLightBrightness 0.4; 
@@ -86,6 +89,7 @@
 		_light setLightColor[1.0, 1.0, 1.0]; 
 		_light lightAttachObject [tower1, [0,0,15]];
 	};
+	*/
 
 	_end = createTrigger["EmptyDetector", wcmapcenter];
 	_end setTriggerArea[10, 10, 0, false];

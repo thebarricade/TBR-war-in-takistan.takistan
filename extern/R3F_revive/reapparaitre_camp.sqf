@@ -106,7 +106,7 @@ R3F_REV_fil_exec_reapparaitre_camp = [_camp] spawn
 
 	switch (_camp) do {
 		case "base": {
-			wcgarbage = [localize "STR_R3F_REV_dontrespawnatbase"] call BIS_fnc_dynamicText;
+			// wcgarbage = [localize "STR_R3F_REV_dontrespawnatbase"] call BIS_fnc_dynamicText;
 			wcrespawntobase = name player;
 			["wcrespawntobase", "all"] call WC_fnc_publicvariable;
 			player setPos getmarkerpos "respawn_west";
@@ -114,7 +114,7 @@ R3F_REV_fil_exec_reapparaitre_camp = [_camp] spawn
 		};
 
 		case "hq": {
-			wcgarbage = [localize "STR_R3F_REV_dontrespawnatbase"] call BIS_fnc_dynamicText;
+			// wcgarbage = [localize "STR_R3F_REV_dontrespawnatbase"] call BIS_fnc_dynamicText;
 			wcrespawntohq = name player;
 			["wcrespawntohq", "all"] call WC_fnc_publicvariable;
 			_position = (position wcteleport) findemptyposition [10, 300];
@@ -125,7 +125,7 @@ R3F_REV_fil_exec_reapparaitre_camp = [_camp] spawn
 		};
 
 		case "tent": {
-			wcgarbage = [localize "STR_R3F_REV_dontrespawnatbase"] call BIS_fnc_dynamicText;
+			// wcgarbage = [localize "STR_R3F_REV_dontrespawnatbase"] call BIS_fnc_dynamicText;
 			wcrespawntotent = name player;
 			["wcrespawntotent", "all"] call WC_fnc_publicvariable;
 			player setpos (wcrespawnposition select 0);

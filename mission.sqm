@@ -3,17 +3,52 @@ class Mission
 {
 	addOns[]=
 	{
-		"takistan"
+		"takistan",
+		"ca_modules_functions",
+		"cacharacters_e",
+		"caweapons_e",
+		"cawheeled_e_hmmwv",
+		"CAWheeled_E_stryker",
+		"cawheeled_e_suv",
+		"CAWheeled_E",
+		"camisc_e_wf",
+		"CATracked_E_M2A2_Bradley",
+		"camisc3",
+		"CAAir_E_UH60M",
+		"CAMisc",
+		"camisc_e",
+		"caweapons_e_ammoboxes",
+		"CAWheeled_E_LandRover",
+		"CAWheeled_E_ATV",
+		"caweapons_pmc",
+		"warfarebuildings"
 	};
 	addOnsAuto[]=
 	{
+		"ca_modules_functions",
+		"cacharacters_e",
+		"caweapons_e",
+		"cawheeled_e_hmmwv",
+		"CAWheeled_E_stryker",
+		"cawheeled_e_suv",
+		"CAWheeled_E",
+		"camisc_e_wf",
+		"CATracked_E_M2A2_Bradley",
+		"camisc3",
+		"CAAir_E_UH60M",
+		"CAMisc",
+		"camisc_e",
+		"caweapons_e_ammoboxes",
+		"CAWheeled_E_LandRover",
+		"CAWheeled_E_ATV",
+		"caweapons_pmc",
+		"warfarebuildings",
 		"takistan"
 	};
 	randomSeed=4546277;
 	class Intel
 	{
-		briefingName="WAR IN TAKISTAN 1.6";
-		briefingDescription="code34";
+		briefingName="TBR War In Takistan (1.6)";
 		resistanceWest=0;
 		resistanceEast=1;
 		startWeather=0.0099999905;
@@ -26,7 +61,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=30;
+		items=23;
 		class Item0
 		{
 			side="LOGIC";
@@ -576,290 +611,10 @@ class Mission
 				items=5;
 				class Item0
 				{
-					position[]={7048.0605,331.22827,4928.5308};
-					azimut=-253.743;
-					special="CARGO";
-					id=1079;
-					side="WEST";
-					vehicle="US_Delta_Force_TL_EP1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					init="this setGroupid [""Foxtrot""];";
-				};
-				class Item1
-				{
-					position[]={7048.3706,331.22943,4929.0195};
-					azimut=-245.526;
-					special="CARGO";
-					id=1080;
-					side="WEST";
-					vehicle="US_Delta_Force_Medic_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Foxtrot""];";
-				};
-				class Item2
-				{
-					position[]={7047.8335,331.22879,4928.064};
-					azimut=-246.52901;
-					special="CARGO";
-					id=1081;
-					side="WEST";
-					vehicle="US_Delta_Force_Night_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Foxtrot""];";
-					description="Engineer";
-				};
-				class Item3
-				{
-					position[]={7047.2456,331.21329,4928.1729};
-					azimut=-251.19501;
-					special="CARGO";
-					id=1082;
-					side="WEST";
-					vehicle="US_Delta_Force_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Foxtrot""];";
-				};
-				class Item4
-				{
-					position[]={7047.5244,331.21399,4928.6401};
-					azimut=-257.27399;
-					special="CARGO";
-					id=1083;
-					side="WEST";
-					vehicle="US_Delta_Force_Assault_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Foxtrot""];";
-				};
-			};
-		};
-		class Item22
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=5;
-				class Item0
-				{
-					position[]={7049.9189,331.28015,4927.9614};
-					azimut=-253.743;
-					special="CARGO";
-					id=1084;
-					side="WEST";
-					vehicle="US_Delta_Force_TL_EP1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					init="this setGroupid [""Echo""];";
-				};
-				class Item1
-				{
-					position[]={7050.229,331.28281,4928.4502};
-					azimut=-245.526;
-					special="CARGO";
-					id=1085;
-					side="WEST";
-					vehicle="US_Delta_Force_Medic_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Echo""];";
-				};
-				class Item2
-				{
-					position[]={7049.6919,331.2807,4927.4946};
-					azimut=-246.52901;
-					special="CARGO";
-					id=1086;
-					side="WEST";
-					vehicle="US_Delta_Force_Night_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Echo""];";
-					description="Engineer";
-				};
-				class Item3
-				{
-					position[]={7049.104,331.26517,4927.6035};
-					azimut=-251.19501;
-					special="CARGO";
-					id=1087;
-					side="WEST";
-					vehicle="US_Delta_Force_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Echo""];";
-				};
-				class Item4
-				{
-					position[]={7049.3828,331.2659,4928.0708};
-					azimut=-257.27399;
-					special="CARGO";
-					id=1088;
-					side="WEST";
-					vehicle="US_Delta_Force_Assault_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Echo""];";
-				};
-			};
-		};
-		class Item23
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=5;
-				class Item0
-				{
-					position[]={7048.9165,331.28549,4925.5249};
-					azimut=-253.743;
-					special="CARGO";
-					id=1089;
-					side="WEST";
-					vehicle="US_Delta_Force_TL_EP1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					init="this setGroupid [""Hotel""];";
-				};
-				class Item1
-				{
-					position[]={7049.2266,331.28848,4926.0137};
-					azimut=-245.526;
-					special="CARGO";
-					id=1090;
-					side="WEST";
-					vehicle="US_Delta_Force_Medic_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Hotel""];";
-				};
-				class Item2
-				{
-					position[]={7048.6895,331.28378,4925.0581};
-					azimut=-246.52901;
-					special="CARGO";
-					id=1091;
-					side="WEST";
-					vehicle="US_Delta_Force_Night_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Hotel""];";
-					description="Engineer";
-				};
-				class Item3
-				{
-					position[]={7048.1016,331.26675,4925.167};
-					azimut=-251.19501;
-					special="CARGO";
-					id=1092;
-					side="WEST";
-					vehicle="US_Delta_Force_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Hotel""];";
-				};
-				class Item4
-				{
-					position[]={7048.3804,331.26987,4925.6343};
-					azimut=-257.27399;
-					special="CARGO";
-					id=1093;
-					side="WEST";
-					vehicle="US_Soldier_SniperH_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Hotel""];";
-				};
-			};
-		};
-		class Item24
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=5;
-				class Item0
-				{
-					position[]={7047.0049,331.22803,4926.0942};
-					azimut=-253.743;
-					special="CARGO";
-					id=1094;
-					side="WEST";
-					vehicle="US_Delta_Force_TL_EP1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					init="this setGroupid [""Golf""];";
-				};
-				class Item1
-				{
-					position[]={7047.3149,331.23175,4926.583};
-					azimut=-245.526;
-					special="CARGO";
-					id=1095;
-					side="WEST";
-					vehicle="US_Delta_Force_Medic_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Golf""];";
-				};
-				class Item2
-				{
-					position[]={7046.7778,331.22632,4925.6274};
-					azimut=-246.52901;
-					special="CARGO";
-					id=1096;
-					side="WEST";
-					vehicle="US_Delta_Force_Night_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Golf""];";
-					description="Engineer";
-				};
-				class Item3
-				{
-					position[]={7046.1899,331.20929,4925.7363};
-					azimut=-251.19501;
-					special="CARGO";
-					id=1097;
-					side="WEST";
-					vehicle="US_Delta_Force_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Golf""];";
-				};
-				class Item4
-				{
-					position[]={7046.4688,331.21237,4926.2036};
-					azimut=-257.27399;
-					special="CARGO";
-					id=1098;
-					side="WEST";
-					vehicle="US_Soldier_SniperH_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Golf""];";
-				};
-			};
-		};
-		class Item25
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=5;
-				class Item0
-				{
 					position[]={7050.9116,331.28372,4929.9985};
 					azimut=-253.743;
 					special="CARGO";
-					id=1099;
+					id=1079;
 					side="WEST";
 					vehicle="US_Delta_Force_TL_EP1";
 					player="PLAY CDG";
@@ -872,7 +627,7 @@ class Mission
 					position[]={7051.2217,331.2847,4930.4873};
 					azimut=-245.526;
 					special="CARGO";
-					id=1100;
+					id=1080;
 					side="WEST";
 					vehicle="US_Delta_Force_Medic_EP1";
 					player="PLAY CDG";
@@ -884,7 +639,7 @@ class Mission
 					position[]={7050.6846,331.28281,4929.5317};
 					azimut=-246.52901;
 					special="CARGO";
-					id=1101;
+					id=1081;
 					side="WEST";
 					vehicle="US_Delta_Force_Night_EP1";
 					player="PLAY CDG";
@@ -897,7 +652,7 @@ class Mission
 					position[]={7050.0967,331.26355,4929.6406};
 					azimut=-251.19501;
 					special="CARGO";
-					id=1102;
+					id=1082;
 					side="WEST";
 					vehicle="US_Delta_Force_EP1";
 					player="PLAY CDG";
@@ -909,7 +664,7 @@ class Mission
 					position[]={7050.3755,331.26602,4930.1079};
 					azimut=-257.27399;
 					special="CARGO";
-					id=1103;
+					id=1083;
 					side="WEST";
 					vehicle="US_Delta_Force_Assault_EP1";
 					player="PLAY CDG";
@@ -918,147 +673,7 @@ class Mission
 				};
 			};
 		};
-		class Item26
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=5;
-				class Item0
-				{
-					position[]={7049.8452,331.20526,4932.8901};
-					azimut=-253.743;
-					special="CARGO";
-					id=1104;
-					side="WEST";
-					vehicle="US_Delta_Force_TL_EP1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					init="this setGroupid [""Alpha""];";
-				};
-				class Item1
-				{
-					position[]={7050.1553,331.20309,4933.3789};
-					azimut=-245.526;
-					special="CARGO";
-					id=1105;
-					side="WEST";
-					vehicle="US_Delta_Force_Medic_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Alpha""];";
-				};
-				class Item2
-				{
-					position[]={7049.6182,331.2095,4932.4233};
-					azimut=-246.52901;
-					special="CARGO";
-					id=1106;
-					side="WEST";
-					vehicle="US_Delta_Force_Night_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Alpha""];";
-					description="Engineer";
-				};
-				class Item3
-				{
-					position[]={7049.0303,331.19519,4932.5322};
-					azimut=-251.19501;
-					special="CARGO";
-					id=1107;
-					side="WEST";
-					vehicle="US_Delta_Force_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Alpha""];";
-				};
-				class Item4
-				{
-					position[]={7049.3091,331.19202,4932.9995};
-					azimut=-257.27399;
-					special="CARGO";
-					id=1108;
-					side="WEST";
-					vehicle="US_Delta_Force_Assault_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Alpha""];";
-				};
-			};
-		};
-		class Item27
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=5;
-				class Item0
-				{
-					position[]={7048.9702,331.2196,4930.9116};
-					azimut=-253.743;
-					special="CARGO";
-					id=1109;
-					side="WEST";
-					vehicle="US_Delta_Force_TL_EP1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					init="this setGroupid [""Charly""];";
-				};
-				class Item1
-				{
-					position[]={7049.2803,331.22031,4931.4004};
-					azimut=-245.526;
-					special="CARGO";
-					id=1110;
-					side="WEST";
-					vehicle="US_Delta_Force_Medic_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Charly""];";
-				};
-				class Item2
-				{
-					position[]={7048.7432,331.22012,4930.4448};
-					azimut=-246.52901;
-					special="CARGO";
-					id=1111;
-					side="WEST";
-					vehicle="US_Delta_Force_Night_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Charly""];";
-					description="Engineer";
-				};
-				class Item3
-				{
-					position[]={7048.1553,331.20462,4930.5537};
-					azimut=-251.19501;
-					special="CARGO";
-					id=1112;
-					side="WEST";
-					vehicle="US_Delta_Force_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Charly""];";
-				};
-				class Item4
-				{
-					position[]={7048.4341,331.20532,4931.021};
-					azimut=-257.27399;
-					special="CARGO";
-					id=1113;
-					side="WEST";
-					vehicle="US_Delta_Force_Assault_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Charly""];";
-				};
-			};
-		};
-		class Item28
+		class Item22
 		{
 			side="EAST";
 			class Vehicles
@@ -1068,83 +683,13 @@ class Mission
 				{
 					position[]={3125.02,66.690208,9902.0127};
 					azimut=150;
-					id=1118;
+					id=1088;
 					side="EAST";
 					vehicle="TK_Aziz_EP1";
 					leader=1;
 					skill=0.60000002;
 					text="imam";
 					init="this setvariable [""wcprotected"", true]; this allowdammage false; this setposatl [getPos this select 0, getpos this select 1, 0.3]; removeAllWeapons this;";
-				};
-			};
-		};
-		class Item29
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=5;
-				class Item0
-				{
-					position[]={7051.8242,331.27588,4931.813};
-					azimut=-253.743;
-					special="CARGO";
-					id=1119;
-					side="WEST";
-					vehicle="US_Delta_Force_TL_EP1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					init="this setGroupid [""Juliet""];";
-				};
-				class Item1
-				{
-					position[]={7052.1343,331.27441,4932.3018};
-					azimut=-245.526;
-					special="CARGO";
-					id=1120;
-					side="WEST";
-					vehicle="US_Delta_Force_Medic_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Juliet""];";
-				};
-				class Item2
-				{
-					position[]={7051.5972,331.27902,4931.3462};
-					azimut=-246.52901;
-					special="CARGO";
-					id=1121;
-					side="WEST";
-					vehicle="US_Delta_Force_Night_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Juliet""];";
-					description="Engineer";
-				};
-				class Item3
-				{
-					position[]={7051.0093,331.2619,4931.4551};
-					azimut=-251.19501;
-					special="CARGO";
-					id=1122;
-					side="WEST";
-					vehicle="US_Delta_Force_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Juliet""];";
-				};
-				class Item4
-				{
-					position[]={7051.2881,331.26004,4931.9224};
-					azimut=-257.27399;
-					special="CARGO";
-					id=1123;
-					side="WEST";
-					vehicle="US_Delta_Force_Assault_EP1";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this setGroupid [""Juliet""];";
 				};
 			};
 		};
@@ -11488,7 +11033,7 @@ class Mission
 		{
 			position[]={7139.7661,332.37704,4907.7715};
 			azimut=1277.87;
-			id=1114;
+			id=1084;
 			side="EMPTY";
 			vehicle="MtvrReammo_DES_EP1";
 			skill=0.60000002;
@@ -11499,7 +11044,7 @@ class Mission
 			position[]={7055.5098,331.23328,4937.9536};
 			azimut=18.747999;
 			special="NONE";
-			id=1115;
+			id=1085;
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.60000002;
@@ -11510,7 +11055,7 @@ class Mission
 		{
 			position[]={7036.0195,330.51657,4907.9712};
 			azimut=105;
-			id=1116;
+			id=1086;
 			side="EMPTY";
 			vehicle="SatPhone";
 			skill=0.60000002;
@@ -11520,7 +11065,7 @@ class Mission
 		{
 			position[]={7147.1606,336.37027,4841.9194};
 			azimut=-344.45999;
-			id=1117;
+			id=1087;
 			side="EMPTY";
 			vehicle="HeliHRescue";
 			skill=0.60000002;
