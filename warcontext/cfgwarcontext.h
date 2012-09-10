@@ -16,7 +16,7 @@
 				description = "[EN]\nBuild a tent: personnal respawn point";
 				file = "warcontext\actions\WC_fnc_dobuildtent.sqf";
 			};
-		}
+		};
 
 		class AMBIANTS
 		{
