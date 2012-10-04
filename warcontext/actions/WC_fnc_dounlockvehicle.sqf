@@ -11,7 +11,8 @@
 		"_mydir", 
 		"_dammage", 
 		"_name",
-		"_text"
+		"_text",
+		"_wait"
 	];
 
 	_mydir = getdir player;
@@ -21,13 +22,15 @@
 
 	_object = _list select 0;
 
+	if (typeOf player in wcengineerclass) then { _wait = 8; } else { _wait = 16; };
+
 	if(locked _object) then {
 		_name= getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "DisplayName");
 		_text = format[localize "STR_WC_MESSAGEUNLOCKING", _name];
 
-		wcgarbage = [format["Unlock Vehicle: %1", _name], _text, "", 8] spawn WC_fnc_playerhint;
+		wcgarbage = [format["Unlock Vehicle: %1", _name], _text, "", _wait] spawn WC_fnc_playerhint;
 		player playMove "AinvPknlMstpSlayWrflDnon_medic";
-		sleep 8;
+		sleep _wait;
 
 		if!(alive player) exitwith {};
 		_text = format[localize "STR_WC_MESSAGEISUNLOCKED", _name];
@@ -38,9 +41,9 @@
 		_name= getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "DisplayName");
 		_text = format[localize "STR_WC_MESSAGELOCKING", _name];
 
-		wcgarbage = [format["Lock Vehicle: %1", _name], _text, "", 8] spawn WC_fnc_playerhint;
+		wcgarbage = [format["Lock Vehicle: %1", _name], _text, "", _wait] spawn WC_fnc_playerhint;
 		player playMove "AinvPknlMstpSlayWrflDnon_medic";
-		sleep 8;
+		sleep _wait;
 
 		if!(alive player) exitwith {};
 		_text = format[localize "STR_WC_MESSAGEISLOCKED", _name];

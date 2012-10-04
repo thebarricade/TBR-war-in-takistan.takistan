@@ -13,6 +13,7 @@
 		"_listofweapons",
 		"_refreshTime",
 		"_magazines",
+		"_backpacks",
 		"_weapons",
 		"_autoload"
 	];
@@ -30,16 +31,21 @@
 
 	_weapons = [];
 	_magazines = [];
+	_backpacks = [];
 
-	_amountweapon = 2;
+	_amountweapon = 1;
 	_amountammo = 20;
 
 	_refreshtime = 1800; 
 	_crate allowDamage false;
 
+	// only add backpacks once
+	_backpacks = [] call WC_fnc_enumbackpacks;
+	{ _crate addBackpackCargo [_x, 3];} foreach _backpacks;
+
 	while {true} do {
 		clearweaponcargo 	_crate;
-		clearmagazinecargo 	_crate;	
+		clearmagazinecargo 	_crate;
 
 		switch (_autoload) do {
 			case "addons": {
@@ -50,6 +56,7 @@
 			default {
 				{_crate addWeaponCargo [_x, _amountweapon];} forEach wclistofweapons;
 				_magazines = [wclistofweapons + ["Throw", "Put"]] call WC_fnc_enummagazines;
+				
 			};
 		};
 

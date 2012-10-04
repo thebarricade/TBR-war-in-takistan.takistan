@@ -14,7 +14,7 @@
 	call compile preprocessFileLineNumbers "extern\Init_UPSMON.sqf";
 
 	// Init Debugger
-	wcgarbage = [] spawn WC_fnc_debug;
+	// wcgarbage = [] spawn WC_fnc_debug;
 
 	// Grab all WC_fnc_publicvariable events
 	if(isdedicated) then {

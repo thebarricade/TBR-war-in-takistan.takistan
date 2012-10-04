@@ -63,7 +63,7 @@
 			class createcivilcars
 			{
 				description = "[EN]\nCreate civil cars in a location";
-				file = "warcontext\modules\wc_civilcar\WC_fnc_createcivilcar.sqf";
+				file = "warcontext\modules\wc_civilcars\WC_fnc_createcivilcar.sqf";
 			};
 			class createammobox
 			{

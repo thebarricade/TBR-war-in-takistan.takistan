@@ -120,6 +120,8 @@
 		_overcast 		= wccurrentmission select 10;
 		wcmissiondone = wcmissiondone + [_missionnumber];
 
+		diag_log format[ "%1", wccurrentmission];
+
 		if((_time select 3) < (date select 3)) then { wcday = wcday + 1; wcfame = wcfame - 0.15;};
 		if((_time select 3) == (date select 3)) then { if((_time select 4) < (date select 4)) then { wcday = wcday + 1; wcfame = wcfame - 0.15; };};
 

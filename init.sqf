@@ -54,12 +54,6 @@
 		};
 	};
 
-	// init R3F arty and logistic script
-	wcgarbage = [] spawn { execVM "extern\R3F_ARTY_AND_LOG\init.sqf"; };
-
-	// init BON loadout script
-	wcgarbage = [] spawn { presetDialogUpdate = compile preprocessFile "extern\bon_loadoutpresets\bon_func_presetdlgUpdate.sqf"; };
-
 	/////////////////////
 	// EXTERNAL SCRIPTS
 	/////////////////////
@@ -95,6 +89,7 @@
 	WC_fnc_enummusic 		= compile preprocessFile "warcontext\ressources\WC_fnc_enummusic.sqf";
 	WC_fnc_enumvehicle 		= compile preprocessFile "warcontext\ressources\WC_fnc_enumvehicle.sqf";
 	WC_fnc_enumweapons 		= compile preprocessFile "warcontext\ressources\WC_fnc_enumweapons.sqf";
+	WC_fnc_enumbackpacks 		= compile preprocessFile "warcontext\ressources\WC_fnc_enumbackpacks.sqf";
 	WC_fnc_enumvillages		= compile preprocessFile "warcontext\ressources\WC_fnc_enumvillages.sqf";
 
 	/////////////////////
@@ -338,6 +333,34 @@
 	//////////////////////////////////////////
 
 	waituntil {!isnil "bis_fnc_init"};
+
+	[
+		NEO_coreLogic,
+		[
+			WEST,
+			[
+				[
+					getPos tower3, 
+					-344.46, 
+					"UH60M_EP1", 
+					"Eagle-Four", 
+					["pickup", "land", "land (eng off)", "move", "circle"], 
+					{}
+				]
+			],
+			[],
+			[
+				[
+					getMarkerPos "mk_arty",
+					"M119",
+					"Arclight-One",
+					1,
+					[["HE", 15], ["WP", 5], ["ILLUM", 10], ["LASER", 2], ["SMOKE", 15]],
+					{}
+				]
+			]
+		]
+	] execVM "scripts\NEO_radio\init.sqf";
 
 	wcgarbage = [] call WC_fnc_commoninitconfig;
 
